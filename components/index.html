@@ -5,7 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Components for bonz.ai</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius Sans One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="components.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Text styles</h1>
+    <h1 class="big-heading">big Heading</h1>
+    <h2 class="medium-heading">medium heading</h2>
+    <h3 class="small-heading">small heading</h3>
+    <p class="big-text">big text</p>
+    <p class="small-text">small text</p>
+    <p class="small-text-bold">small text bold</p>
+    <h1>colors</h1>
+    <div class="block__primary">
+      <h2>Primary color</h2>
+      <p>#313B43</p>
+    </div>
+    <div class="block__secondary">
+      <h2>Secondary color</h2>
+      <p>#8F744C</p>
+    </div>
+    <div class="block__secondary--light">
+      <h2>Secondary color light</h2>
+      <p>#EBCDA0</p>
+    </div>
+    <article class="grid">
+      <h1>buttons</h1>
+      <button class="button-action small-heading">Find out more</button>
+      <nav class="menu dark-bg">
+        <a href="#" class="menu__option-light medium-heading">houses</a>
+        <a href="#" class="menu__option-light medium-heading">vision</a>
+        <a href="#" class="menu__option-light medium-heading">contact</a>
+      </nav>
+      <nav class="menu">
+        <a href="#" class="menu__option-dark medium-heading current-underline"
+          >houses</a
+        >
+        <a
+          href="#"
+          class="hover-underline-animation menu__option-dark medium-heading"
+          >vision</a
+        >
+        <a
+          href="#"
+          class="hover-underline-animation menu__option-dark medium-heading"
+          >contact</a
+        >
+      </nav>
+    </article>
+    <br />
+    <div class="slideshow">
+      <div class="slideshow__slides fade">
+        <img src="../img/08-night.jpg" class="slideshow__img" />
+        <div class="slideshow__slides--info">
+          <h2 class="medium-heading slideshow__slides--heading">
+            the lakehouse
+          </h2>
+          <p class="small-text slideshow__slides--text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
+            expedita accusantium illo eligendi commodi, adipisci atque natus
+            delectus corrupti unde odio voluptatem.
+          </p>
+        </div>
+        <button class="button-action small-heading slideshow__button">
+          Find out more
+        </button>
+      </div>
+
+      <div class="slideshow__slides fade">
+        <img src="../img/01-day.jpg" class="slideshow__img" />
+        <div class="slideshow__slides--info">
+          <h2 class="medium-heading slideshow__slides--heading">
+            Workaholic cabin
+          </h2>
+          <p class="small-text slideshow__slides--text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
+            expedita accusantium illo eligendi commodi, adipisci atque natus
+            delectus corrupti unde odio voluptatem.
+          </p>
+        </div>
+        <button class="button-action small-heading slideshow__button">
+          Find out more
+        </button>
+      </div>
+
+      <div class="slideshow__slides fade">
+        <img src="../img/05-day.jpg" class="slideshow__img" />
+        <div class="slideshow__slides--info">
+          <h2 class="medium-heading slideshow__slides--heading">
+            the all-inclusive
+          </h2>
+          <p class="small-text slideshow__slides--text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
+            expedita accusantium illo eligendi commodi, adipisci atque natus
+            delectus corrupti unde odio voluptatem.
+          </p>
+        </div>
+        <button class="button-action small-heading slideshow__button">
+          Find out more
+        </button>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="slideshow__dots">
+        <span class="slideshow__dots--dot" onclick="currentSlide(1)"></span>
+        <span class="slideshow__dots--dot" onclick="currentSlide(2)"></span>
+        <span class="slideshow__dots--dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <section class="grid">
+      <article class="housecard">
+        <img src="../img/05-day.jpg" alt="" class="housecard__img" />
+        <aside class="housecard__content">
+          <h2 class="medium-heading housecard__content--heading">
+            the all-inclusive
+          </h2>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">Work station for you that have to work</p>
+          </div>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">One King-size bed</p>
+          </div>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">24 hour house service</p>
+          </div>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">Free WIFI</p>
+          </div>
+          <button
+            class="button-action small-heading housecard__content--button"
+          >
+            Book now
+          </button>
+        </aside>
+      </article>
+    </section>
+    <br /><br /><br /><br />
+    <script src="slideshow.js"></script>
+  </body>
 </html>
