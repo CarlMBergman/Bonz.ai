@@ -297,7 +297,7 @@ img {vertical-align: middle;}
   }
 
   @media screen and (max-width: 872px) {
-    .slideshow__button {
+    .button-action {
         width: 150px;
         height: 50px;
         margin-bottom: .5rem;
@@ -376,7 +376,7 @@ img {vertical-align: middle;}
     display: flex;
 }
 
-.infobox__checkinout--text {
+.infobox__text {
     margin-right: 1rem;
 }
 
@@ -533,5 +533,5 @@ img {vertical-align: middle;}
     .datepicker {
         height: 150px;
     }
-
+  
 }
