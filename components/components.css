@@ -9,6 +9,7 @@
 * {
     padding: 0;
     margin: 0;
+    cursor: default;
 }
 
 /* text styles */
@@ -100,6 +101,7 @@
     background-color: var(--secondary-color);
     color: var(--text-secondary-color);
     border: none;
+    cursor: pointer;
 }
 
 .menu {
@@ -110,16 +112,40 @@
 }
 
 .dark-bg {
-    background-color: grey;
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
 }
 
-.menu__option-light {
+.menu__option--light {
     color: var(--text-secondary-color);
     text-decoration: none;
     opacity: 80%;
+    cursor: pointer;
 }
 
-.menu__option-dark {
+.menu__option--dark {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .menu__option--dark {
+        font-size: 20px;
+    }
+    .menu__option--light {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 708px) {
+    .menu__option--dark {
+        font-size: 16px;
+    }
+    .menu__option--light {
+        font-size: 16px;
+    }
+}
+
+.menu__option--dark {
     color: var(--text-primary-color);
     text-decoration: none;
 }
@@ -159,7 +185,8 @@ img {vertical-align: middle;}
 /* Slideshow container */
 
 .slideshow {
-    max-width: 100%;
+    grid-column: 1 / 7;
+    width: 100%;
     position: relative;
     margin: auto;
     max-height: 810px;
@@ -187,7 +214,7 @@ img {vertical-align: middle;}
     margin-bottom: 2rem;
   }
 
-  .slideshow__slides--info {
+  .slideshow__info {
     position: absolute;
     grid-column: 5 / 7;
     background-color: #D9D9D961;
@@ -198,12 +225,10 @@ img {vertical-align: middle;}
     color: var(--text-secondary-color);
   }
 
-  .slideshow__slides--info--heading {
+  .slideshow__info--heading {
     padding-bottom: 1rem;
   }
 
-  
-  
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
@@ -214,7 +239,7 @@ img {vertical-align: middle;}
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
+    transition: 0.6s ease-in-out;
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
@@ -238,7 +263,7 @@ img {vertical-align: middle;}
     grid-column: 3 / 5;
   }
 
-  .slideshow__dots--dot {
+  .slideshow__dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -249,7 +274,7 @@ img {vertical-align: middle;}
     transition: background-color 0.6s ease;
   }
   
-  .active, .slideshow__dots--dot:hover {
+  .active, .slideshow__dot:hover {
     background-color: var(--secondary-color);
   }
   
@@ -266,7 +291,7 @@ img {vertical-align: middle;}
   
   /* On smaller screens, decrease text size */
   @media screen and (max-width: 990px) {
-    .slideshow__slides--info--text {
+    .slideshow__info--text {
         display: none;
       }
   }
@@ -305,11 +330,11 @@ img {vertical-align: middle;}
     color: var(--text-secondary-color);
 }
 
-.housecard__content--heading {
+.housecard__heading {
     margin-bottom: 1rem;
 }
 
-.housecard__content--text {
+.housecard__text {
     display: flex;
     align-items: center;
     margin-bottom: .8rem;
@@ -317,15 +342,16 @@ img {vertical-align: middle;}
 }
 
 
-.housecard__content--text--dot {
+.housecard__dot {
     width: 5px;
     height: 5px;
     border-radius: 100px;
     background-color: var(--text-secondary-color);
     margin-right: .8rem;
+    display: inline-block;
 }
 
-.housecard__content--button {
+.housecard__button {
     align-self: flex-end;
     margin-top: auto;
     width: 200px;
@@ -365,8 +391,101 @@ img {vertical-align: middle;}
     justify-content: space-between;
 }
 
-@media screen and (max-width: 725px) {
-    .housecard__content--text {
+.datepicker {
+    display: flex;
+    grid-column: 1 / 5;
+    margin: 1rem;
+    min-height: 52px;
+    background-color: var(--primary-color);
+
+}
+
+.datepicker__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.datepicker__persondate {
+    padding: .3rem;
+    padding-left: 1rem;
+    display: flex;
+}
+
+.datepicker__text {
+    color: var(--text-secondary-color);
+}
+
+.datepicker__input {
+    height: 18px;
+    width: 6rem;
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
+    border: none;
+}
+
+.datepicker__persons {
+    width: 4rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text-secondary-color);
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text-secondary-color);
+}
+
+.footer {
+    grid-column: 1 / 7;
+    padding: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
+}
+
+.footer__location {
+    width: 33%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer__img {
+    width: 80%;
+}
+
+.footer__text {
+    align-self: flex-start;
+}
+
+.footer__services {
+    width: 33%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__heading {
+    text-align: center;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--text-secondary-color);
+}
+
+.footer__link:hover {
+    color: var(--secondary-color-light);
+}
+
+@media screen and (max-width: 758px) {
+    .housecard__text {
         margin-bottom: 0;
         margin-left: .5rem;
     }
@@ -377,13 +496,42 @@ img {vertical-align: middle;}
     .infobox {
         display: none;
     }
+    .datepicker {
+        grid-column: 1/ 7;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__location {
+        width: 90%;
+    }
+
+    .footer__services {
+        width: 90%;
+    }
 }
 
-@media screen and (max-width: 497px) {
+@media screen and (max-width: 515px) {
     .housecard__content {
         width: 100%;
     }
     .housecard__img {
         display: none;
     }
+    .datepicker__persondate {
+        padding-left: 0px;
+    }
+    .menu {
+        grid-column: 3 / 7;
+    }
+    .datepicker__flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .datepicker {
+        height: 150px;
+    }
+
 }

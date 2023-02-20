@@ -40,22 +40,22 @@
       <h1>buttons</h1>
       <button class="button-action small-heading">Find out more</button>
       <nav class="menu dark-bg">
-        <a href="#" class="menu__option-light medium-heading">houses</a>
-        <a href="#" class="menu__option-light medium-heading">vision</a>
-        <a href="#" class="menu__option-light medium-heading">contact</a>
+        <a href="#" class="menu__option--light medium-heading">houses</a>
+        <a href="#" class="menu__option--light medium-heading">vision</a>
+        <a href="#" class="menu__option--light medium-heading">contact</a>
       </nav>
       <nav class="menu">
-        <a href="#" class="menu__option-dark medium-heading current-underline"
+        <a href="#" class="menu__option--dark medium-heading current-underline"
           >houses</a
         >
         <a
           href="#"
-          class="hover-underline-animation menu__option-dark medium-heading"
+          class="hover-underline-animation menu__option--dark medium-heading"
           >vision</a
         >
         <a
           href="#"
-          class="hover-underline-animation menu__option-dark medium-heading"
+          class="hover-underline-animation menu__option--dark medium-heading"
           >contact</a
         >
       </nav>
@@ -64,11 +64,9 @@
     <div class="slideshow">
       <div class="slideshow__slides fade">
         <img src="../img/08-night.jpg" class="slideshow__img" />
-        <div class="slideshow__slides--info">
-          <h2 class="medium-heading slideshow__slides--info--heading">
-            the lakehouse
-          </h2>
-          <p class="small-text slideshow__slides--info--text">
+        <div class="slideshow__info">
+          <h2 class="medium-heading slideshow__info--heading">the lakehouse</h2>
+          <p class="small-text slideshow__info--text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
             expedita accusantium illo eligendi commodi, adipisci atque natus
@@ -82,11 +80,11 @@
 
       <div class="slideshow__slides fade">
         <img src="../img/01-day.jpg" class="slideshow__img" />
-        <div class="slideshow__slides--info">
-          <h2 class="medium-heading slideshow__slides--info--heading">
+        <div class="slideshow__-info">
+          <h2 class="medium-heading slideshow__info--heading">
             Workaholic cabin
           </h2>
-          <p class="small-text slideshow__slides--info--text">
+          <p class="small-text slideshow__info--text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
             expedita accusantium illo eligendi commodi, adipisci atque natus
@@ -100,11 +98,11 @@
 
       <div class="slideshow__slides fade">
         <img src="../img/05-day.jpg" class="slideshow__img" />
-        <div class="slideshow__slides--info">
-          <h2 class="medium-heading slideshow__slides--info--heading">
+        <div class="slideshow__info">
+          <h2 class="medium-heading slideshow__info--heading">
             the all-inclusive
           </h2>
-          <p class="small-text slideshow__slides--info--text">
+          <p class="small-text slideshow__info--text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
             expedita accusantium illo eligendi commodi, adipisci atque natus
@@ -119,40 +117,84 @@
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
       <div class="slideshow__dots">
-        <span class="slideshow__dots--dot" onclick="currentSlide(1)"></span>
-        <span class="slideshow__dots--dot" onclick="currentSlide(2)"></span>
-        <span class="slideshow__dots--dot" onclick="currentSlide(3)"></span>
+        <span class="slideshow__dot" onclick="currentSlide(1)"></span>
+        <span class="slideshow__dot" onclick="currentSlide(2)"></span>
+        <span class="slideshow__dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
     <br />
     <br />
     <br />
     <section class="grid">
+      <article class="datepicker">
+        <div class="datepicker__flex">
+          <aside class="datepicker__persondate">
+            <img
+              src="../img/material-symbols_person.svg"
+              alt="person"
+              class="datepicker__img"
+            />
+            <div class="datepicker__text">
+              <p class="small-text-bold">Persons</p>
+              <input
+                type="number"
+                class="datepicker__input datepicker__persons"
+                placeholder="1"
+              />
+            </div>
+          </aside>
+          <aside class="datepicker__persondate">
+            <img
+              src="../img/material-symbols_calendar-month-outline.svg"
+              alt="person"
+              class="datepicker__img"
+            />
+            <div class="datepicker__text">
+              <p class="small-text-bold">Check-in</p>
+              <input type="date" class="datepicker__input" />
+            </div>
+          </aside>
+          <aside class="datepicker__persondate">
+            <img
+              src="../img/material-symbols_calendar-month-outline.svg"
+              alt="person"
+              class="datepicker__img"
+            />
+            <div class="datepicker__text">
+              <p class="small-text-bold">Check-out</p>
+              <input type="date" class="datepicker__input" />
+            </div>
+          </aside>
+        </div>
+        <div></div>
+      </article>
+
       <article class="housecard">
         <img src="../img/05-day.jpg" alt="" class="housecard__img" />
         <aside class="housecard__content">
-          <h2 class="medium-heading housecard__content--heading">
-            the all-inclusive
-          </h2>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">Work station for you that have to work</p>
+          <h2 class="medium-heading housecard__heading">the all-inclusive</h2>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>Work station for you that have
+              to work
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">One King-size bed</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>One King-size bed
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">24 hour house service</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>24 hour house service
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">Free WIFI</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>Free WIFI
+            </p>
           </div>
-          <button
-            class="button-action small-heading housecard__content--button"
-          >
+          <button class="button-action small-heading housecard__button">
             Book now
           </button>
         </aside>
@@ -160,28 +202,29 @@
       <article class="housecard">
         <img src="../img/05-day.jpg" alt="" class="housecard__img" />
         <aside class="housecard__content">
-          <h2 class="medium-heading housecard__content--heading">
-            the all-inclusive
-          </h2>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">Work station for you that have to work</p>
+          <h2 class="medium-heading housecard__heading">the all-inclusive</h2>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>Work station for you that have
+              to work
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">One King-size bed</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>One King-size bed
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">24 hour house service</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>24 hour house service
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">Free WIFI</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>Free WIFI
+            </p>
           </div>
-          <button
-            class="button-action small-heading housecard__content--button"
-          >
+          <button class="button-action small-heading housecard__button">
             Book now
           </button>
         </aside>
@@ -189,28 +232,29 @@
       <article class="housecard">
         <img src="../img/05-day.jpg" alt="" class="housecard__img" />
         <aside class="housecard__content">
-          <h2 class="medium-heading housecard__content--heading">
-            the all-inclusive
-          </h2>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">Work station for you that have to work</p>
+          <h2 class="medium-heading housecard__heading">the all-inclusive</h2>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>Work station for you that have
+              to work
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">One King-size bed</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>One King-size bed
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">24 hour house service</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>24 hour house service
+            </p>
           </div>
-          <div class="housecard__content--text">
-            <div class="housecard__content--text--dot"></div>
-            <p class="small-text">Free WIFI</p>
+          <div class="housecard__text">
+            <p class="small-text">
+              <span class="housecard__dot"></span>Free WIFI
+            </p>
           </div>
-          <button
-            class="button-action small-heading housecard__content--button"
-          >
+          <button class="button-action small-heading housecard__button">
             Book now
           </button>
         </aside>
@@ -235,8 +279,51 @@
           <p class="big-text">0.00$</p>
         </div>
       </article>
+      <footer class="footer">
+        <aside class="footer__location">
+          <h2 class="medium-heading footer__location--heading">Location</h2>
+          <img
+            src="../img/gis_world-map-alt.svg"
+            alt="location"
+            class="footer__location--img"
+          />
+          <aside class="footer__location--text">
+            <p class="small-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              exercitationem natus beatae, earum mollitia ex fugit, sint,
+            </p>
+            <p class="small-text">
+              <span class="small-text-bold">Adress:</span> Rickipungsvägen 14
+            </p>
+          </aside>
+        </aside>
+        <aside class="footer__services">
+          <h2 class="medium-heading footer__services--heading">Services</h2>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">Bonz.iar airport</p>
+          </div>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">
+              Drone shuttle from your house (Only for australians)
+            </p>
+          </div>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">Our Wine package</p>
+          </div>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">Contact</p>
+          </div>
+          <div class="housecard__content--text">
+            <div class="housecard__content--text--dot"></div>
+            <p class="small-text">Cancel your booking</p>
+          </div>
+        </aside>
+      </footer>
     </section>
-    <br /><br /><br /><br />
     <script src="slideshow.js"></script>
   </body>
 </html>

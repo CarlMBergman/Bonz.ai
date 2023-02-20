@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonz.ai</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius Sans One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="components/components.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <img src="img/09-night.jpg" alt="header image" class="header__img" />
+    <header class="header grid">
+      <aside class="header__text">
+        <img
+          src="img/bonz.ai-logo-white-landscape.png"
+          alt="logo"
+          class="header__logo"
+        />
+        <h2 class="medium-heading header__slogan">your lonely retreat</h2>
+      </aside>
+      <nav class="menu">
+        <a href="houses.html" class="menu__option--light medium-heading">houses</a>
+        <a href="#" class="menu__option--light medium-heading">vision</a>
+        <a href="#" class="menu__option--light medium-heading">contact</a>
+      </nav>
+    </header>
+    <main class="grid">
+      <article class="heading">
+        <h1 class="big-heading heading__text">no people, only drones and ai</h1>
+        <br />
+        <hr class="heading__line" />
+      </article>
+      <aside class="content dark-bg">
+        <aside class="content__card">
+          <h2 class="medium-heading content__heading">our vision</h2>
+          <p class="big-text content__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit
+          </p>
+          <button class="button-action small-heading content__button">
+            Find out more
+          </button>
+        </aside>
+      </aside>
+      <aside class="content">
+        <img src="img/03-day.jpg" alt="bedview" class="content__img" />
+      </aside>
+      <aside class="content">
+        <img src="img/06-day.jpg" alt="" class="content__img" />
+      </aside>
+      <aside class="content">
+        <aside class="content__card">
+          <h2 class="medium-heading content__heading">our proud founders</h2>
+          <p class="big-text content__text">
+            <img
+              src="img/bonz.ai-logo-black-symbol.png"
+              class="content__smallimg"
+            />
+            Katmandus greatest architect Manfred Knoppstopp built this retreat
+            together with the French Welshman Claude-Louis Xavier and his AI
+            driven drones that he designed to build and maintain these beautiful
+            houses.
+          </p>
+          <button class="button-action small-heading content__button">
+            Find out more
+          </button>
+        </aside>
+      </aside>
+      <article class="heading">
+        <h1 class="big-heading heading__text">the houses</h1>
+        <br />
+        <hr class="heading__line" />
+      </article>
+      <div class="slideshow">
+        <div class="slideshow__slides fade">
+          <img src="../img/08-night.jpg" class="slideshow__img" />
+          <div class="slideshow__info">
+            <h2 class="medium-heading slideshow__info--heading">
+              the lakehouse
+            </h2>
+            <p class="small-text slideshow__info--text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
+              expedita accusantium illo eligendi commodi, adipisci atque natus
+              delectus corrupti unde odio voluptatem.
+            </p>
+          </div>
+          <button onclick="location.href='houses.html'" class="button-action small-heading slideshow__button">
+            Find out more
+          </button>
+        </div>
+        <div class="slideshow__slides fade">
+          <img src="../img/01-day.jpg" class="slideshow__img" />
+          <div class="slideshow__info">
+            <h2 class="medium-heading slideshow__info--heading">
+              Workaholic cabin
+            </h2>
+            <p class="small-text slideshow__info--text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
+              expedita accusantium illo eligendi commodi, adipisci atque natus
+              delectus corrupti unde odio voluptatem.
+            </p>
+          </div>
+          <button onclick="location.href='houses.html'" class="button-action small-heading slideshow__button">
+            Find out more
+          </button>
+        </div>
+        <div class="slideshow__slides fade">
+          <img src="../img/05-day.jpg" class="slideshow__img" />
+          <div class="slideshow__info">
+            <h2 class="medium-heading slideshow__info--heading">
+              the all-inclusive
+            </h2>
+            <p class="small-text slideshow__info--text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              qui perspiciatis quasi saepe, quisquam iusto ducimus consectetur
+              expedita accusantium illo eligendi commodi, adipisci atque natus
+              delectus corrupti unde odio voluptatem.
+            </p>
+          </div>
+          <button onclick="location.href='houses.html'" class="button-action small-heading slideshow__button">
+            Find out more
+          </button>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="slideshow__dots">
+          <span class="slideshow__dot" onclick="currentSlide(1)"></span>
+          <span class="slideshow__dot" onclick="currentSlide(2)"></span>
+          <span class="slideshow__dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <aside class="footer__location">
+        <h2 class="medium-heading footer__heading">Location</h2>
+        <img
+          src="../img/gis_world-map-alt.svg"
+          alt="location"
+          class="footer__img"
+        />
+        <aside class="footer__text">
+          <p class="small-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+            exercitationem natus beatae, earum mollitia ex fugit, sint,
+          </p>
+          <p class="small-text">
+            <span class="small-text-bold">Adress:</span> Rickipungsvägen 14
+          </p>
+        </aside>
+      </aside>
+      <aside class="footer__services">
+        <h2 class="medium-heading footer__heading">Services</h2>
+        <a href="#" class="small-text footer__link">
+          <span class="housecard__dot"></span>Bonz.iar airport
+        </a>
+        <a href="#" class="small-text footer__link">
+          <span class="housecard__dot"></span>
+          Drone shuttle from your house (Only for australians)
+        </a>
+        <a href="#" class="small-text footer__link">
+          <span class="housecard__dot"></span>Our Wine package
+        </a>
+        <a href="#" class="small-text footer__link"><span class="housecard__dot"></span>Contact</p>
+        <a href="#" class="small-text footer__link">
+          <span class="housecard__dot"></span>Cancel your booking
+        </a>
+      </aside>
+    </footer>
+    <script src="components/slideshow.js"></script>
+  </body>
+</html>
