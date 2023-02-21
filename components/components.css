@@ -530,11 +530,26 @@ img {vertical-align: middle;}
 }
 
 @media screen and (max-width: 515px) {
+    .housecard {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
     .housecard__content {
         width: 100%;
+        padding: 0;
     }
     .housecard__img {
-        display: none;
+        width: 100%;
+    }
+    .housecard__heading {
+        padding: 1rem;
+    }
+    .housecard__text {
+        padding-left: 1rem;
+    }
+    .housecard__button {
+        margin: 1rem;
     }
     .datepicker__persondate {
         padding-left: 0px;
