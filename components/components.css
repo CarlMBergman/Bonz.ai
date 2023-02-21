@@ -216,13 +216,14 @@ img {vertical-align: middle;}
 
   .slideshow__info {
     position: absolute;
-    grid-column: 5 / 7;
+    grid-column: 5 / span 2;
     background-color: #D9D9D961;
     z-index: 667;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     color: var(--text-secondary-color);
+    right: 0;
   }
 
   .slideshow__info--heading {
@@ -280,7 +281,7 @@ img {vertical-align: middle;}
   
   /* Fading animation */
   .fade {
-    animation-name: fade;
+    animation-name: slide;
     animation-duration: 1.5s;
   }
   
@@ -301,6 +302,20 @@ img {vertical-align: middle;}
         width: 150px;
         height: 50px;
         margin-bottom: .5rem;
+    }
+  }
+
+  @media screen and (max-width: 465px) {
+    .slideshow__info {
+        padding: 5px;
+    }
+    .slideshow__info--heading {
+        padding-bottom: 0;
+    }
+    .slideshow__button {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
     }
   }
 

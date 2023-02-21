@@ -111,12 +111,38 @@ header {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .content {
+        grid-column: span 7;
+        height: 100%;
+    }
+    .content:nth-child(5) {
+        grid-row: 4 / 5;
+    }
+    .content__text {
+        display: block;
+    }
+    .content__smallimg {
+        top: 0px;
+        margin-bottom: 0px;
+        width: 100px;
+    }
+    .content__text {
+        font-size: 14px;
+    }
+}
+
+
 @media screen and (max-width: 464px) {
     .big-heading {
         font-size: 30px;
     }
 
     .medium-heading {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .header__slogan {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
