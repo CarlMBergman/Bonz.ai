@@ -211,7 +211,8 @@ img {vertical-align: middle;}
     z-index: 666;
     justify-self: center;
     align-self: end;
-    margin-bottom: 2rem;
+    bottom: 20px;
+    right: 15px;
   }
 
   .slideshow__info {
